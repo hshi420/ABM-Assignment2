@@ -1,7 +1,7 @@
 import mesa
 import random 
 
-from agent import PDAgent
+from agent_old import PDAgent
 
 
 class PdGrid(mesa.Model):
