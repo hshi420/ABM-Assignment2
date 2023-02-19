@@ -9,18 +9,15 @@ fixed_parameters = {
 
 schedule_types = list(PdGrid.schedule_types.keys())
 
-parameters_list = [{"payoffs": 0.5, "schedule_type": schedule_types[0]},
-                   {"payoffs": 0.5, "schedule_type": schedule_types[1]},
-                   {"payoffs": 0.5, "schedule_type": schedule_types[2]},
-                   {"payoffs": 0.9, "schedule_type": schedule_types[0]},
-                   {"payoffs": 0.9, "schedule_type": schedule_types[1]},
-                   {"payoffs": 0.9, "schedule_type": schedule_types[2]},
-                   {"payoffs": 1, "schedule_type": schedule_types[0]},
-                   {"payoffs": 1, "schedule_type": schedule_types[1]},
-                   {"payoffs": 1, "schedule_type": schedule_types[2]},
+parameters_list = [{"payoffs": 1.2, "schedule_type": schedule_types[0]},
+                   {"payoffs": 1.2, "schedule_type": schedule_types[1]},
+                   {"payoffs": 1.2, "schedule_type": schedule_types[2]},
                    {"payoffs": 1.6, "schedule_type": schedule_types[0]},
                    {"payoffs": 1.6, "schedule_type": schedule_types[1]},
-                   {"payoffs": 1.6, "schedule_type": schedule_types[2]}]
+                   {"payoffs": 1.6, "schedule_type": schedule_types[2]},
+                   {"payoffs": 2, "schedule_type": schedule_types[0]},
+                   {"payoffs": 2, "schedule_type": schedule_types[1]},
+                   {"payoffs": 2, "schedule_type": schedule_types[2]}]
 
 batch_run = FixedBatchRunner(PdGrid, parameters_list, fixed_parameters, iterations=5, max_steps = 50)
 

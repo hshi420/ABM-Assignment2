@@ -37,10 +37,9 @@ class PdGrid(mesa.Model):
         mesa.Model.reset_randomizer(self, seed) #comment this out -- helps for replicability
         random.seed(seed)      
 
-        self.payoff = {0.5: {("C", "C"): 1, ("C", "D"): 0, ("D", "C"): 0.5, ("D", "D"): 0},
-                  0.9: {("C", "C"): 1, ("C", "D"): 0, ("D", "C"): 0.9, ("D", "D"): 0},
-                  1: {("C", "C"): 1, ("C", "D"): 0, ("D", "C"): 1, ("D", "D"): 0},
-                  1.6: {("C", "C"): 1, ("C", "D"): 0, ("D", "C"): 1.6, ("D", "D"): 0}}
+        self.payoff = {1.2: {("C", "C"): 1, ("C", "D"): 0, ("D", "C"): 1.2, ("D", "D"): 0},
+                  1.6: {("C", "C"): 1, ("C", "D"): 0, ("D", "C"): 1.6, ("D", "D"): 0},
+                  2: {("C", "C"): 1, ("C", "D"): 0, ("D", "C"): 2, ("D", "D"): 0}}
 
         self.payoffs = self.payoff[payoffs] 
 
